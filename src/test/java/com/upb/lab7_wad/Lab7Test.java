@@ -12,8 +12,9 @@ class Lab7Test {
         assertEquals(5, result);
     }
 
+    @Disabled("This test is disabled until MY_SECRET_KEY is added to GitHub secrets")
     @Test
-void environment() {
-    assertEquals("ABC", System.getenv("MY_SECRET_KEY"));
-}
+    void environment() {
+        assertEquals("ABC", System.getenv("MY_SECRET_KEY"));
+    }
 }
